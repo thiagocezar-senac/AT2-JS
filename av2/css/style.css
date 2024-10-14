@@ -1,0 +1,97 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(109, 169, 236);
+}
+
+main {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 700px;
+}
+
+img {
+    width: 50%;
+    object-fit: cover;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+h5 {
+    margin: 10px 0;
+}
+
+.tittle {
+    text-align: center;
+    padding: 12px 0 30px 0;
+    font-size: 20px;
+}
+
+.userName,
+.email,
+.password,
+.confirmPassword {
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#sign-order {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 17px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.btnRegister,
+.btnSignGoogle,
+.btnSignFacebook {
+    border-radius: 20px;
+}
+
+.btnRegister {
+    background-color: #007BFF;
+}
+
+.btnSignGoogle {
+    background-color: #DB4437;
+}
+
+.btnSignFacebook {
+    background-color: #0b448d;
+}
+
+a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
