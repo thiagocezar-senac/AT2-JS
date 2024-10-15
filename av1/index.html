@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <h1>Dados Cadastrais</h1>
+        </div>
+        <br>
+        <div class="row m-3">
+            <div class="col-8 p">
+                <label for="login">Nome Completo:</label>
+                <input class="form-control" id="nome" type="text" placeholder="Informe o Nome Completo...">
+            </div>
+            <div class="col-4">
+                <label for="login">Idade:</label>
+                <input class="form-control" id="idade" type="text" placeholder="Informe a Idade...">
+
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-8">
+                <label for="login">Salário:</label>
+                <input class="form-control" id="salario" type="text" placeholder="Informe o Salário...">
+
+            </div>
+            <div class="col-4">
+                <label for="login">Sexo:</label>
+                <select class="form-control" id="login">
+                    <option value="">Selecione...</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="O">Outro</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div class="row m-3">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="d-grid col-12 mx-auto">
+                        <button class="btn btn-primary" 
+                        type="button">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <section>
+            <h2></h2>
+        </section>
+    </section>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
