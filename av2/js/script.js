@@ -1,25 +1,25 @@
-// Função para validar o preenchimento dos campos e regras
+// Validar o preenchimento dos campos e regras
 function validateFields(username, email, password, confirmPassword) {
     if (!username || !email || !password || !confirmPassword) {
-        alert("Todos os campos são obrigatórios.");
+        alert("Todos os campos são obrigatórios, preencha e tente novamente.");
         return false;
     }
 
-    // Validação de username: apenas letras e sem repetição
+    // Apenas letras e sem repetição de username
     if (!/^[a-zA-Z]+$/.test(username)) {
-        alert("O username deve conter apenas letras.");
+        alert("O username não pode conter número, apenas letras.");
         return false;
     }
 
-    // Validação de senha: exatamente 8 caracteres e no mínimo 2 números
-    if (password.length !== 8 || password.replace(/[^0-9]/g, "").length < 2) {
-        alert("A senha deve ter exatamente 8 caracteres e incluir pelo menos 2 números.");
+    // Mínimo de 8 caracteres e no mínimo 2 números
+    if (password.length < 8 || password.replace(/[^0-9]/g, "").length < 2) {
+        alert("A senha deve ter no mínimo 8 caracteres e incluir pelo menos 2 números.");
         return false;
     }
 
     // Verificar se a confirmação de senha é igual à senha
     if (password !== confirmPassword) {
-        alert("As senhas não coincidem.");
+        alert("As senhas estão diferentes, verifique e tente novamente.");
         return false;
     }
 
@@ -32,13 +32,14 @@ function saveToStorage(username, email) {
 
     // Verificar se o username já existe
     if (users.some(user => user.username === username)) {
-        alert("Este username já foi registrado.");
+        alert("Usuário já foi cadastrado, verifique e tente novamente!");
         return false;
     }
 
     // Adicionar novo usuário
     users.push({ username, email });
     sessionStorage.setItem('users', JSON.stringify(users));
+    alert("Usuário cadastrado com sucesso!");
 
     return true;
 }
